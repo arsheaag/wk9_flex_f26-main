@@ -23,7 +23,7 @@ section { margin-bottom: 2rem; }
 .cards-flex .card { border-color: #d6336c; } /* pink = flex */
 
 /* Comment this out for Part 3 */
-.extra {display:none;}
+/* .extra {display:none;} */
 
 /*Your code goes here!*/
 
@@ -49,3 +49,12 @@ section { margin-bottom: 2rem; }
 }
 
 /*Add another media query and style it to have two rows*/
+@media (min-width: 768px) {
+  .cards-flex {
+    flex-direction: row;
+  }
+
+  .cards-flex .card {
+    flex: 1;
+  }
+}
