@@ -49,12 +49,24 @@ section { margin-bottom: 2rem; }
 }
 
 /*Add another media query and style it to have two rows*/
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
   .cards-flex {
     flex-direction: row;
   }
 
   .cards-flex .card {
     flex: 1;
+  }
+} */
+
+
+@media (min-width: 768px) {
+  .cards-flex {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .cards-flex .card {
+    flex: 1 1 30%;
   }
 }
