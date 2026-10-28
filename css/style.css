@@ -28,9 +28,24 @@ section { margin-bottom: 2rem; }
 /*Your code goes here!*/
 
 /*First, style the .cards-grid class*/
+.cards-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
 
 /*Add a media query and style the grid to have three columns*/
+@media (min-width: 768px) {
+  .cards-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
 
 /*Style the .cards-flex class*/
+.cards-flex {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
 
 /*Add another media query and style it to have two rows*/
